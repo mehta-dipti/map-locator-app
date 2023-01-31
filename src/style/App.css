@@ -1,0 +1,24 @@
+.leaflet-container {
+  height: 500px;
+  width: 800px;
+}
+
+.navigation-bar {
+  background-color: rgb(245, 245, 245);
+  height: 40px;
+}
+
+.search-bar {
+  background-color: rgb(236, 236, 236);
+}
+
+[class*="-MuiInputBase-root-MuiOutlinedInput-root"] {
+  height: 50px;
+}
+
+.search-container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
