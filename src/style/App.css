@@ -1,15 +1,20 @@
+body {
+  background-color: #c8d7be;
+  font-family: "Courier New", Courier, monospace;
+}
+
 .leaflet-container {
-  height: 500px;
+  height: calc(100vh - 110px);
   width: 800px;
 }
 
 .navigation-bar {
-  background-color: rgb(245, 245, 245);
+  background-color: #c8d7be;
   height: 40px;
 }
 
 .search-bar {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(247, 247, 247);
 }
 
 [class*="-MuiInputBase-root-MuiOutlinedInput-root"] {

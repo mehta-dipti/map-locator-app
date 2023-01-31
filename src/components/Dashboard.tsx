@@ -37,16 +37,14 @@ function Dashboard() {
     <>
       <Grid container className="dashboard">
         <Grid item xs={12} className="navigation-bar">
-          <Typography variant="h5" sx={{ display: "flex", justifyContent: "center" }} color="primary">
-            Search-App
-          </Typography>
+          <Typography variant="h4" sx={{ display: "flex", justifyContent: "center" }} color="primary"></Typography>
         </Grid>
         <Grid item xs={12} className="search-bar">
           <Search handleSearch={handleSearch} />
         </Grid>
 
         <Grid container justifyContent="space-between" className="map-container">
-          <Grid item>
+          <Grid item className="search-results">
             <SearchResults results={data} onSelectOption={onSelectOption} />
           </Grid>
           <Grid item className="map">
