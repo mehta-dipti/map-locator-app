@@ -19,6 +19,7 @@ body {
   position: absolute;
   top: 50px;
   left: 100px;
+  z-index: 999;
 }
 
 .search-results {
@@ -26,6 +27,7 @@ body {
   top: 120px;
   left: 80px;
   cursor: pointer;
+  z-index: 999;
 }
 /* [class*="-MuiInputBase-root-MuiOutlinedInput-root"] {
   height: 50px;
@@ -36,8 +38,4 @@ body {
   display: flex;
   align-items: center;
   margin-left: 20px;
-}
-
-.map-container {
-  z-index: -1;
 }
