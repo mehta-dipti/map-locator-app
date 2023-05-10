@@ -25,7 +25,7 @@ function Search(props: ISearchProps) {
   };
 
   return (
-    <div className="search-container">
+    <div>
       <TextField
         variant="outlined"
         placeholder="Search here"

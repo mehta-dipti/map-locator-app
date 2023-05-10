@@ -17,7 +17,7 @@ function Dashboard() {
 
   const handleSearch = (searchQuery: string) => {
     const results = searchLocation(searchQuery).then((results: any) => {
-      console.log(results);
+      // console.log(results);
       const filteredData = results.filter((item: any) => item.type === "administrative");
       setData(filteredData);
     });
@@ -36,19 +36,20 @@ function Dashboard() {
   return (
     <>
       <Grid container className="dashboard">
-        <Grid item xs={12} className="navigation-bar">
+        {/* <Grid item xs={12} className="navigation-bar">
           <Typography variant="h4" sx={{ display: "flex", justifyContent: "center" }} color="primary"></Typography>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} className="search-bar">
           <Search handleSearch={handleSearch} />
         </Grid>
 
-        <Grid container justifyContent="space-between" className="map-container">
+        <Grid container justifyContent="space-between">
           <Grid item className="search-results">
             <SearchResults results={data} onSelectOption={onSelectOption} />
           </Grid>
-          <Grid item className="map">
-            <MyMap center={[center.lat, center.lng]} zoom={13} scrollWheelZoom={false} polygonPositions={polygon} boundingBox={boundingBox} />
+
+          <Grid item className="map-container">
+            <MyMap center={[center.lat, center.lng]} zoom={13} scrollWheelZoom={true} polygonPositions={polygon} boundingBox={boundingBox} />
           </Grid>
         </Grid>
       </Grid>
